@@ -69,7 +69,12 @@ a {
 
 .homepage-image, .homepage-image img {
     margin: 0;
+}
+
+.homepage-image img {
     width: 100%;
+    margin: auto;
+    z-index: 25;
 }
 
 .image-overlay {
@@ -87,7 +92,7 @@ a {
 .home-header {
     position: relative;
     margin-bottom: 50px;
-    height: 900px;
+    height: fit-content;
     overflow: hidden;
 }
 
