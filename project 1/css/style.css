@@ -113,8 +113,10 @@ a {
     margin: auto;
 }
 
-section {
+section, main, article {
     padding: 50px 50px;
+    max-width: 2000px;
+    margin: auto;
 }
 
 .homepage-paragraph {
@@ -144,6 +146,24 @@ section {
 .image-caption {
     font-size: 12px;
     width: 100px;
+}
+
+footer {
+    padding: 50px 50px;
+    text-align: center;
+}
+
+footer p {
+    text-indent: 0;
+}
+
+footer a {
+    font-size: 1rem;
+    color: white;
+}
+
+footer a:hover {
+    color: #b4cfcf;
 }
 
 @media (max-width: 1100px) {
@@ -180,11 +200,11 @@ section {
     }
 
     header {
-        background-color: #b4cfcf;
         height: fit-content;
     }
 
     .navbar {
+        background-color: #b4cfcf;
         height: fit-content;
         position: relative;
     }
