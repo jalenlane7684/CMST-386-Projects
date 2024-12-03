@@ -176,10 +176,6 @@ footer a:hover {
         font-size: 3rem;
     }
 
-    .homepage-image {
-        position: relative;
-    }
-
     .homepage-image img {
         display: none;
     }
@@ -188,11 +184,21 @@ footer a:hover {
         text-align: center;
         position: relative;
     }
-
-    .image-overlay {
-        display: block;
+    
+    .home-header {
         height: 200px;
-        
+        padding: 20px 0;
+        margin: 0;
+    }
+    .image-overlay {
+        height: 100%; /* Adjust height as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-main {
+        margin-top: 10px;
     }
 
     a {
