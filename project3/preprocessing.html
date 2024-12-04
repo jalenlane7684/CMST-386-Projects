@@ -4,6 +4,8 @@
     <link rel="stylesheet/less" type="text/css" href="css/less/styles.less" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An overview on how preprocessing works, as well as how to use preprocessing with LESS.">
+    <meta name="keywords" content="preprocessing">
     <title>Project 3: Preprocessing</title>
 </head>
 <body>
@@ -24,18 +26,18 @@
             <h2>How do I Implement Preprocessing?</h2>
             <p>When implementing CSS preprocessing, there are two ways to go about it: server-side and client-side.</p>
 
-            <h3>Server-Side</h3>
-            <p></p>
             <h3>Client-Side</h3>
-            <p></p>
+            <p>With the client-side approach, the processing occurs in the client's browser. The LESS files are compiled into CSS using a JavaScript Library. Client-side preprocessing allows for realtime updates to the LESS files without re-compiling them.</p>
+            <h3>Server-Side</h3>
+            <p>With server-side, the processing is done on the web server, and the resulting CSS is sent to the client's browser. You want to use server-side if you prioritize loading times as well as browser compatibility.</p>
         </section>
             <h2>LESS Features</h2>
             <h3>Mixins</h3>
-            <p>LESS allows you to "mix in" css properties from existing classes and ids. To "mix in" an existing style to a new selector, type the class name or id name followed by parenthesis. <br> <em>Examples: .class-name();, #id-name();s</em></p>
+            <p>LESS allows you to "mix in" css properties from existing classes and ids. To "mix in" an existing style to a new selector, type the class name or id name followed by parenthesis. <br> <em>Examples: .class-name();, #id-name();</em></p>
             <h3>Variables</h3>
             <p>Variables, like in other programming languages, allow you to store values. In LESS, they can be used to store colors, selector names, urls, and values. Variables do not have to be declared before they are used.</p>
             <h3>Functions</h3>
-            <p>Functions can be used to perform calculations and change values. There are several prebuilt functions in LESS</p>
+            <p>Functions can be used to perform calculations and change values. There are several prebuilt functions in LESS.</p>
             <h3>Operators</h3>
             <p>Operators can be used to perform calculations as well as add logic to your stylesheet. There are the standard arithmetic operators as well as comparison or logical operators. </p>
             <h3>Nested Variables</h3>
@@ -49,3 +51,5 @@
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
 </body>
 </html>
+
+<!--How I implemented LESS: Due to issues with my computer, I was not able to use npm to install LESS to take the server-side appraoch. Instead, I used the client-side approach by linking a script provided on the LESS website to enable my styles.less file to work. The two most beneficial featues of LESS that I used in this project were the nesting feature and variables. Nesting helped me organize my code tremendously, and using it meant that I wouldn't have to essentially duplicate my selectors to select a specific child of a class. Using variables allowed me to change the color of multiple elements that I wanted to have the same color without needing to change every instance of them. -->
