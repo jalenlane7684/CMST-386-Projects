@@ -126,7 +126,7 @@ section, main, article {
 
 .navbar-gallery {
     min-height: 50px;
-    background-color: #b4cfcf;
+    background-color: #539191;
     position: sticky;
     top: 0;
 }
@@ -211,7 +211,7 @@ footer a:hover {
     }
 
     .navbar {
-        background-color: #b4cfcf;
+        background-color: #539191;
         height: fit-content;
         position: relative;
     }
