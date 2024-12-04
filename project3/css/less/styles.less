@@ -1,0 +1,68 @@
+// Variables
+@primary-color: #007bff;
+@secondary-color: #f0f0f0;
+@font-stack: Arial, sans-serif;
+@base-font-size: 24px;
+@nav-item-spacing: 20px;
+
+body {
+  font-family: @font-stack;
+  margin: 0;
+  padding: 0;
+  font-size: @base-font-size;
+}
+
+header, footer {
+  background-color: @secondary-color;
+  padding: 10px;
+}
+
+header {
+  background-color: @primary-color;
+}
+
+footer > a {
+  color: black;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: @nav-item-spacing;
+}
+
+.button {
+  background: linear-gradient(to right, @primary-color, lighten(@primary-color, 20%));
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+main {
+  padding: 50px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
