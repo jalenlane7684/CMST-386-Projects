@@ -16,6 +16,7 @@ body {
   font-size: @base-font-size;
   background-color: @secondary-color;
   color: white;
+  box-sizing: border-box;
 
   header {
     background-color: @primary-color;
@@ -90,7 +91,17 @@ nav {
 }
 
 main {
+
   padding: 50px;
+  .sections {
+  display: flex;
+  flex-direction: row;
+
+  section {
+    flex: 1;
+    padding: 20px;
+  }
+  }
 }
 
 @media (max-width: 1024px) {
