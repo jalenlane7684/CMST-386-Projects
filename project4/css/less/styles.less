@@ -29,15 +29,26 @@ body {
 
     h1 {
         font-size: @base-font-size * 1.5;
-    }    
+    }  
+    
+    img {
+        max-width: 100%;
+    }
+
+    header {
+        padding: 0;
+    }
 
 }
 
 nav {
-
-    background-color: @primary-color;
     margin: 0;
     padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: fit-content;
+
 
     ul {
         display: flex;
@@ -53,6 +64,46 @@ nav {
                 text-decoration: none;
             }
         }
+    }
+}
+
+#home-navbar {
+    transition: background-color 0.3s ease-in-out;
+    background-color: rgba(27, 27, 27, 0);
+}
+
+#header-image {
+    padding: 0;
+    height: 400px;
+
+    #home-image-overlay {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        color: #EEEEEE;
+        z-index: 50;
+        background: linear-gradient(0deg, rgb(27, 27, 27) 0%, rgba(255, 255, 255, 0) 100%);
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+
+    #home-image-main {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center 25%;
+        padding: 0;
+        
+    }
+
+    h1 {
+        display: inline-block;
+        position: relative;
+        top: 300px;
+        width: 100%;
+        text-align: center;
     }
 }
 
