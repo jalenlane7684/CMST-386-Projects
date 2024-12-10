@@ -1,11 +1,21 @@
+//Get Current page Url
+const currentURL = window.location.href;
+
+
+
+const linkedInButton = document.getElementById
+
+
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
-    const navbar = document.getElementById('home-navbar');
 
 
-    if (scrollPosition >= 350) {
-        navbar.style.backgroundColor = "#539191";
-    } else {
-        navbar.style.backgroundColor = "rgba(27, 27, 27, 0)";
+    if (currentURL.includes("/index")) {
+        const navbar = document.getElementById('home-navbar');
+        if (scrollPosition >= 415) {
+            navbar.style.backgroundColor = "#539191";
+        } else {
+            navbar.style.backgroundColor = "rgba(27, 27, 27, 0)";
+        }
     }
 })
