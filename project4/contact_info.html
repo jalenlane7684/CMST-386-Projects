@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="photography, photos, picture, freelance">
     <meta name="description" content="">
-    <link rel="stylesheet/less" type="text/css" href="css/less/styles.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/style.css" />
     <title>JLPhotography: Contact Information</title>
 </head>
 <body>
@@ -32,6 +32,68 @@
             <h3>Mailing Address:</h3>
             <p class="big-paragraph">2554 Flora Meadows Drive</p>
             <button id="linkedin-button">Visit My LinkedIn Page</button>
+        </section>
+        <section>
+            <h2>Send Me a Message!</h2>
+            <form id="myForm" method="POST" action="mailto:jalen.lane7684.com">
+                <div class="form-container">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+                </div>
+                <div class="form-container">
+                    <label for="phone_num">Phone Number:</label>
+                    <input type="number" id="phone_num" name="phone_num" required>
+                </div>
+                <div class="form-container">
+                    <label for="form_email">E-mail:</label>
+                    <input type="email" name="form_email" id="form_email" placeholder="Type your email..." required>            
+                </div>
+                <div class="form-container">
+                    <div>Contact Reason: (select one)</div>
+                    <div class="contact-radio">
+                        <div class="contact-option">
+                            <input type="radio" name="contact_reason_event" id="contact_reason_event" value="Event">
+                            <label for="contact_reason_event">Event Shoot</label>
+                        </div>
+                        <div class="contact-option">
+                            <input type="radio" name="contact_reason_purchase" id="contact_reason_purchase" value="Purchase">
+                            <label for="contact_reason_purchase">Purchase Photos</label>
+                        </div>
+                        <div class="contact-option">
+                            <input type="radio" name="contact_reason_copyright" id="contact_reason_copyright" value="Copyright">
+                            <label for="contact_reason_copyright">Copyright</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div>Contact Method:</div>
+                    <div class="contact-check">
+                        <div class="contact-option">
+                            <input type="checkbox" name="contact_method_phone" id="contact_method_phone" value="Phone">
+                            <label for="contact_method_phone">Phone</label>
+                          </div>
+                          
+                          <div class="contact-option">
+                            <input type="checkbox" name="contact_method_mail" id="contact_method_mail" value="Mail">
+                            <label for="contact_method_mail">Mail</label>
+                          </div>
+                          
+                          <div class="contact-option">
+                            <input type="checkbox" name="contact_method_email" id="contact_method_email" value="Email">
+                            <label for="contact_method_email">Email</label>
+                          </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <label for="comments">Additional Comments:</label>
+                    <textarea rows="4" cols="50" name="comments" id="comments"></textarea>
+                </div>
+        
+                <div class="form-container" id="buttons">
+                    <button id="submit-button" type="submit">Submit</button>
+                    <button id="reset-button" onclick="reset();">Reset</button>
+                  </div>
+            </form>
         </section>
     </main>
     <footer>
